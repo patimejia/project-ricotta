@@ -12,10 +12,10 @@
   "author": "",
   "license": "EPL-2.0",
   "dependencies": {
-    "@supabase/supabase-js": "^2.13.1",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "mysql2": "^2.3.3",
+    "@prisma/cli": "^3.10.0",
+    "@prisma/client": "^3.10.0"
   },
-  "devDependencies": {
-    "supabase": "^1.46.5"
-  }
+  "devDependencies": {}
 }

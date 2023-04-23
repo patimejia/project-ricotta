@@ -1,0 +1,56 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model LasagnaChef {
+  id                        Int      @id @default(autoincrement())
+  username                  String   @unique
+  email                     String   @unique
+  password                  String
+  firstName                 String
+  lastName                  String
+  addressStreet             String
+  addressCity               String
+  addressStateProvince      String
+  addressPostalZipCode      String
+  maxDistance               Int
+  willingnessExtraLasagnas  Boolean  @default(false)
+  dietaryPreferences         String?  @default(null)
+  homePhoneNumber           String?  @default(null)
+  mobilePhoneNumber         String?  @default(null)
+  middleName                String?  @default(null)
+  birthDate                 DateTime? @default(null)
+  employerName              String?  @default(null)
+  facebookName              String?  @default(null)
+  gender                    String   @default("Prefer Not To Say")
+  showDeliveredMeals        Boolean  @default(false)
+  receiveTexts              Boolean  @default(false)
+  receiveNewsUpdates        Boolean  @default(false)
+  lasagnas                  Lasagna[]
+}
+
+model Eater {
+  id                    Int     @id @default(autoincrement())
+  firstName             String
+  lastName              String
+  addressStreet         String
+  addressCity           String
+  addressStateProvince  String
+  addressPostalZipCode  String
+  dietaryPreferences    String? @default(null)
+  phoneNumber           String
+  lasagnas              Lasagna[]
+}
+
+model Lasagna {
+  id              Int         @id @default(autoincrement())
+  lasagnaChefId   Int
+  eaterId         Int
+  lasagnaChef     LasagnaChef @relation(fields: [lasagnaChefId], references: [id])
+  eater           Eater       @relation(fields: [eaterId], references: [id])
+}

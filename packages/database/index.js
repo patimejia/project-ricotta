@@ -1,12 +1,26 @@
-import { createClient } from "@supabase/supabase-js";
-import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+import { PrismaClient } from "@prisma/client";
+import * as dotenv from "dotenv";
 dotenv.config();
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_KEY
-);
+const prisma = new PrismaClient();
 
-const { data, error } = await supabase.from("lasagna_chef").select();
+async function main() {
+  const lasagnaChefs = await prisma.lasagnaChef.findMany({
+    include: {
+      lasagnas: true,
+    },
+  });
 
-console.log(data, error);
+  console.log(JSON.stringify(lasagnaChefs, null, 2));
+}
+
+main()
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });
+
+// Path: packages/database/prisma/schema.prisma
