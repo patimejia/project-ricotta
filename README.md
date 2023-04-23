@@ -1,15 +1,30 @@
 # Project Ricotta
 
+## Table of Contents
+
+- [About](#about)
+- [Contributing](#contributing)
+  - [Community Code of Conduct](#community-code-of-conduct)
+    - [Be considerate](#be-considerate)
+    - [Be respectful](#be-respectful)
+    - [Be collaborative](#be-collaborative)
+    - [When you disagree, consult others](#when-you-disagree-consult-others)
+    - [When you're unsure, ask for help](#when-youre-unsure-ask-for-help)
+    - [Step down considerately](#step-down-considerately)
+  - [Making Contributions](#making-contributions)
+  - [Project Background](#project-background)
+
+## About
+
 Project Ricotta is a volunteer effort to build a new web and mobile platform for [Lasagna Love](https://www.lasagnalove.org) volunteers. Project Ricotta is designed to scale kindness by building the digital tools to support Lasagna Love chefs, recipients, and donors in contributing to sharing lasagnas between neighbors.
 
-Project Ricotta is constructing and managing the portal, website, data stack, and infrastructure to improve the Lasagna Love volunteer and requester experience. In addition, it offers a chance for individuals who are either new to open source software development, looking to enhance their software development abilities, or simply interested in participating in a meaningful project, to collaborate with a welcoming, open-minded, and cooperative team.
+Project Ricotta constructs and manages the portal, website, data stack, and infrastructure to improve the Lasagna Love volunteer and requester experience. In addition, it offers a chance for individuals who are either new to open source software development, looking to enhance their software development abilities, or simply interested in participating in a meaningful project, to collaborate with a welcoming, open-minded, and cooperative team.
 
 You can join Project Ricotta as a developer, product manager, or ops engineer. We’ve got three classes of contributors: contributors, maintainers, and mentors.
 
 Mentors manage office hours, support our hackathons, and provide guidance to the project and its members. Maintainers lead the development of a specific component of the Project Ricotta experience, and make the final call on architecture and performance. Contributors are the backbone of Project Ricotta, and pick up and work on the tickets required to build and operate Project Ricotta.
 
 Need more help? Join our open office hours, which are currently Friday evenings, starting March 24th, from 4-8 ET.
-
 
 ## Contributing
 
@@ -21,7 +36,7 @@ Project Ricotta is an open source project at a very early stage. We’re buildin
 
 This document is fairly extensive, and we’ll be making it easier to read as we go along.
 
-***The most important rule is that contributing must be cooperative and that the community is friendly and not nitpicking on details, such as coding style. As with all software development, people and teams make the best decisions they can at the time that they make them. If you see something that could be done better, file a ticket - we have the opportunity to improve because we built something, not in spite of the way it was built.***
+> The most important rule is that contributing must be cooperative and that the community is friendly and not nitpicking on details, such as coding style. As with all software development, people and teams make the best decisions they can at the time that they make them. If you see something that could be done better, file a ticket - we have the opportunity to improve because we built something, not in spite of the way it was built.\*\*\*
 
 ### Community Code of Conduct
 
