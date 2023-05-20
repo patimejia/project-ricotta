@@ -78,6 +78,8 @@ When you send a pull request, please be sure to include:
 - Use concise code comments (it can help to imagine that you are explaining your code to a total stranger).
 - Examples, if necessary.
 
+To work with the backend of the project, please refer to the [Bechamel API](https://github.com/Lasagna-Love-Portal/bechamel-api) for instructions on setting up and interacting with the server-side basecode.
+
 ### Reviewing Contributions
 
 We encourage feedback and suggestions on pull requests to help make Project Ricotta the best it can be for our participants and volunteers.
